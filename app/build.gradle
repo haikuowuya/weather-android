@@ -1,22 +1,55 @@
+final VERSION_MAJOR = 1
+final VERSION_MINOR = 0
+final VERSION_PATCH = 0
+final VERSION_BUILD = 0
+
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
+
     defaultConfig {
         applicationId 'com.andra.weather.android'
         minSdkVersion 10
         targetSdkVersion 20
-        versionCode 1
-        versionName '1.0'
+        versionCode VERSION_MAJOR * 10000000 + VERSION_MINOR * 100000 + VERSION_PATCH * 1000 + VERSION_BUILD
+        versionName "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}"
     }
-    buildTypes {
+
+    signingConfigs {
         release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // passwords and alias are obtained via askForPasswords task
+            storeFile file("weather.keystore")
+            storePassword "glanch"
+            keyAlias "weather"
+            keyPassword "glanch"
         }
     }
-    productFlavors {
+
+    buildTypes {
+
+        release {
+            signingConfig signingConfigs.release
+            zipAlign true
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    applicationVariants.all {
+        variant ->
+            if (variant.buildType.name.equals("release")) {
+                def file = variant.outputFile
+                def date = new Date()
+                variant.outputFile = new File(
+                        (String) file.parent,
+                        (String) file.name.replace(
+                                "app",
+                                "weather-" + defaultConfig.versionName + "-" + defaultConfig.versionCode + "-" + date.format('yyyyMMdd')
+                        )
+                )
+            }
     }
 }
 

@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.andra.weather.android.R;
+import com.andra.weather.android.WeatherConfig;
 import com.andra.weather.android.adapter.ForecastListAdapter;
 import com.andra.weather.android.dialog.ActionShareDialogFragment;
 import com.andra.weather.android.pojo.WeatherForecast;
@@ -53,7 +54,7 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView =  inflater.inflate(R.layout.fragment_forecast, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_forecast, container, false);
 
         // Set the window's title in the ActionBar
         getActivity().setTitle(getResources().getString(R.string.title_forecast));
@@ -66,7 +67,7 @@ public class ForecastFragment extends Fragment {
                 ActionShareDialogFragment dialog = new ActionShareDialogFragment();
 
                 // Get the item's string representation from the list's adapter
-                String tempToShare = (String)mForecastList.getAdapter().getItem(position);
+                String tempToShare = (String) mForecastList.getAdapter().getItem(position);
 
                 // Show the new dialog
                 Bundle args = new Bundle();
@@ -98,7 +99,7 @@ public class ForecastFragment extends Fragment {
 
         // Create new adapter for the rest requests; specify the base of the URL
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://api.worldweatheronline.com/premium/v1")
+                .setEndpoint(WeatherConfig.API_BASE_URL)
                 .build();
 
         // Create new service for the API's interface
@@ -113,7 +114,7 @@ public class ForecastFragment extends Fragment {
 
         // Make the GET request asynchronously and set the callback for when it is done
         service.getForecast(stringBuilder.toString(),
-                "json", 5, "yes", Utils.API_KEY, "no", "no", 24, updateWeather);
+                "json", 5, "yes", WeatherConfig.API_KEY, "no", "no", 24, updateWeather);
     }
 
     // Handle the change of orientation
@@ -133,7 +134,7 @@ public class ForecastFragment extends Fragment {
                 ActionShareDialogFragment dialog = new ActionShareDialogFragment();
 
                 // Get the item's string representation from the list's adapter
-                String tempToShare = (String)mForecastList.getAdapter().getItem(position);
+                String tempToShare = (String) mForecastList.getAdapter().getItem(position);
 
                 // Show the new dialog
                 Bundle args = new Bundle();

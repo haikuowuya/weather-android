@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andra.weather.android.R;
+import com.andra.weather.android.WeatherConfig;
 import com.andra.weather.android.pojo.Data;
 import com.andra.weather.android.pojo.Hourly;
 import com.andra.weather.android.pojo.NearestArea;
@@ -114,8 +115,7 @@ public class TodayFragment extends Fragment {
                     (0, R.drawable.ic_wind_speed, 0, 0);
             mDirectionTextView.setCompoundDrawablesWithIntrinsicBounds
                     (0, R.drawable.ic_wind_direction, 0, 0);
-        }
-        else {
+        } else {
             // Show the drawables for the detail widgets
             mPrecipitationTextView.setCompoundDrawablesWithIntrinsicBounds
                     (R.drawable.ic_precipitation, 0, 0, 0);
@@ -182,7 +182,7 @@ public class TodayFragment extends Fragment {
 
         // Create new adapter for the rest requests; specify the base of the URL
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://api.worldweatheronline.com/premium/v1")
+                .setEndpoint(WeatherConfig.API_BASE_URL)
                 .build();
 
         // Create new service for the API's interface
@@ -197,7 +197,7 @@ public class TodayFragment extends Fragment {
 
         // Make the GET request asynchronously and set the callback for when it is done
         service.getForecast(latlonBuilder.toString(),
-                "json", 1, "yes", Utils.API_KEY, "no", "no", 24, updateWeather);
+                "json", 1, "yes", WeatherConfig.API_KEY, "no", "no", 24, updateWeather);
     }
 
     // Handle the change of orientation
