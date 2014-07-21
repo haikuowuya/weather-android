@@ -3,28 +3,28 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/WeatherActionBarStyle</item>
-        <item name="android:actionMenuTextColor">@color/actionBarText</item>
+        <item name="android:actionMenuTextColor">@color/global_white</item>
         <item name="android:activatedBackgroundIndicator">@drawable/list_pressed</item>
 
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/WeatherActionBarStyle</item>
-        <item name="actionMenuTextColor">@color/actionBarText</item>
+        <item name="actionMenuTextColor">@color/global_white</item>
     </style>
 
     <style name="WeatherActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
         <item name="android:background">@drawable/ab_solid</item>
-        <item name="android:titleTextStyle">@style/TextStyle</item>
+        <item name="android:titleTextStyle">@style/ActionBarTextStyle</item>
 
         <!-- Support library compatibility -->
         <item name="background">@drawable/ab_solid</item>
-        <item name="titleTextStyle">@style/TextStyle</item>
+        <item name="titleTextStyle">@style/ActionBarTextStyle</item>
     </style>
 
-    <style name="TextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+    <style name="ActionBarTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
         <!-- The textColor property is backward compatible with the Support Library -->
-        <item name="android:textColor">@color/actionBarText</item>
+        <item name="android:textColor">@color/global_white</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/ab_text_size</item>
 
         <item name="textAllCaps">false</item>
     </style>
@@ -53,22 +53,20 @@
     </style>
 
     <style name="HorizontalDelimiterView">
-        <item name="android:layout_width">70dip</item>
-        <item name="android:layout_height">1dip</item>
-        <item name="android:background">@color/separator_grey</item>
+        <item name="android:layout_width">@dimen/horizontal_separator_length</item>
+        <item name="android:layout_height">@dimen/separator_width</item>
+        <item name="android:background">@color/view_divider</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
-        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/medium_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/medium_horizontal_margin</item>
     </style>
 
     <style name="VerticalDelimiterView">
-        <item name="android:layout_width">1dip</item>
-        <item name="android:layout_height">140dip</item>
-        <item name="android:background">@color/separator_grey</item>
+        <item name="android:layout_width">@dimen/separator_width</item>
+        <item name="android:layout_height">@dimen/vertical_separator_length</item>
+        <item name="android:background">@color/view_divider</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
-        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/medium_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/medium_vertical_margin</item>
     </style>
-
-    <color name="actionBarText">#ffffff</color>
 </resources>

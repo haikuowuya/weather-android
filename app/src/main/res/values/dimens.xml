@@ -1,13 +1,38 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="medium_horizontal_margin">24dp</dimen>
-    <dimen name="medium_vertical_margin">24dp</dimen>
-    <dimen name="small_horizontal_margin">4dp</dimen>
-    <dimen name="small_vertical_margin">4dp</dimen>
-    <dimen name="text_view_vertical_margin">8dp</dimen>
-    <dimen name="text_view_horizontal_margin">8dp</dimen>
-    <dimen name="linear_layout_vertical_margin">32dp</dimen>
-    <dimen name="linear_layout_horizontal_margin">32dp</dimen>
+    <!-- Screen margin sizes-->
+    <dimen name="xlarge_vertical_margin">32dp</dimen>
+    <dimen name="xlarge_horizontal_margin">32dp</dimen>
+
+    <dimen name="large_vertical_margin">24dp</dimen>
+    <dimen name="large_horizontal_margin">24dp</dimen>
+
+    <dimen name="medium_vertical_margin">16dp</dimen>
+    <dimen name="medium_horizontal_margin">16dp</dimen>
+
+    <dimen name="small_vertical_margin">8dp</dimen>
+    <dimen name="small_horizontal_margin">8dp</dimen>
+
+    <dimen name="xsmall_vertical_margin">4dp</dimen>
+    <dimen name="xsmall_horizontal_margin">4dp</dimen>
+
+    <!-- General separator width and length-->
+    <dimen name="separator_width">1dp</dimen>
+    <dimen name="vertical_separator_length">140dp</dimen>
+    <dimen name="horizontal_separator_length">70dp</dimen>
+
+    <!-- Sizes for the action bar-->
+    <dimen name="ab_text_size">18sp</dimen>
+
+    <!-- Sizes for the side drawer-->
+    <dimen name="drawer_width">240dp</dimen>
+    <dimen name="drawer_separator_width">0.3dp</dimen>
+    <dimen name="drawer_text_size">22sp</dimen>
+
+    <!-- Text sizes for the Forecast fragment-->
+    <dimen name="forecast_weekday_text_size">28sp</dimen>
+    <dimen name="forecast_temperature_text_size">28sp</dimen>
+    <dimen name="forecast_description_text_size">18sp</dimen>
+
+    <!-- Text sizes for the Today fragment-->
+    <dimen name="today_temperature_text_size">28sp</dimen>
 </resources>

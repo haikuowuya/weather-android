@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="actionBarBlue">#96B4E4</color>
-    <color name="color_white">#ffffff</color>
-    <color name="separator_grey">#cfcfcf</color>
-    <color name="drawer_separator">#d1d1d1</color>
+    <color name="global_white">#ffffff</color>
+
+    <color name="ab_background">#96B4E4</color>
+
+    <color name="view_divider">#cfcfcf</color>
+
+    <color name="drawer_divider">#d1d1d1</color>
 </resources>

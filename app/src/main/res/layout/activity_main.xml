@@ -7,15 +7,16 @@
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_white"/>
+        android:background="@color/global_white" />
 
     <!-- The navigation drawer -->
-    <ListView android:id="@+id/leftDrawer"
-        android:layout_width="240dp"
+    <ListView
+        android:id="@+id/leftDrawer"
+        android:layout_width="@dimen/drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@drawable/bg_listview_forecast"
         android:choiceMode="singleChoice"
-        android:divider="@color/drawer_separator"
-        android:dividerHeight="0.5dp"
-        android:background="@drawable/bg_listview_forecast"/>
+        android:divider="@color/drawer_divider"
+        android:dividerHeight="@dimen/drawer_separator_width" />
 </android.support.v4.widget.DrawerLayout>
