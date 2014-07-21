@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-79e42da7c2657068d681cf877be8b4cc06e3cb7a.jar"
+        jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\retrofit-1.6.1-f31a5195eb2e84ed2e37b49f64bdefa77dd7ed03.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\libs\retrofit-1.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="efb0a36546aa8857ab8df358b106c1817e03cbee"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\classes-cc84be82eb46e6fe992c817878950b5db922f556.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\exploded-aar\com.android.support\android-support-v4-preferencefragment\1.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="faa8ea626e6bcc9573ed902a24ebb5c71b1e7a27"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\gson-2.2.4-f8925482fac469f4820daa38e6b47b0e9da44152.jar"
+        jar="C:\Users\ANDRA\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-a266a71cb4cc35f8389a1304c783cbd45f37c6fa.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\classes-e8bf43a6639766b09ead97878c7162f9133cfb0a.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\classes-96fafee19e226e6de701402ec426797b7be2b43c.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\classes-3c7bd0dab75aba1a7224b318e8c036ae7f37bba6.jar"
+        jar="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.77\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b6a82434c1eca686607867cd906bcc80ed987837"/>
+    <item
+        dex="C:\Users\ANDRA\AndroidStudioProjects\Weather\app\build\intermediates\pre-dexed\debug\picasso-2.2.0-ac1898ff81ffe53f89b85d01faeb06ed9d8273c9.jar"
+        jar="C:\Users\ANDRA\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.2.0\74137f8d9aac26dd9463efe32271f2be8d41cda9\picasso-2.2.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="74137f8d9aac26dd9463efe32271f2be8d41cda9"/>
+
+</pre-dex-items>

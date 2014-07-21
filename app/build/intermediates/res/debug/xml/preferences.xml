@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/key_weather_length_preference"
+        android:title="@string/weather_length_preference"
+        android:dialogTitle="@string/weather_length_preference"
+        android:entries="@array/weather_length_entries"
+        android:entryValues="@array/weather_length_values"
+        android:defaultValue="@string/weather_meters_value"/>
+
+    <ListPreference
+        android:key="@string/key_weather_temperature_preference"
+        android:title="@string/weather_temperature_preference"
+        android:dialogTitle="@string/weather_temperature_preference"
+        android:entries="@array/weather_temperature_entries"
+        android:entryValues="@array/weather_temperature_values"
+        android:defaultValue="@string/weather_celsius_value"/>
+
+</PreferenceScreen><!-- From: file:/C:/Users/ANDRA/AndroidStudioProjects/Weather/app/src/main/res/xml/preferences.xml -->

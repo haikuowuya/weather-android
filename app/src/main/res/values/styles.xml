@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/WeatherActionBarStyle</item>
+        <item name="android:actionMenuTextColor">@color/actionBarText</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/list_pressed</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/WeatherActionBarStyle</item>
+        <item name="actionMenuTextColor">@color/actionBarText</item>
+    </style>
+
+    <style name="WeatherActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid</item>
+        <item name="android:titleTextStyle">@style/TextStyle</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/ab_solid</item>
+        <item name="titleTextStyle">@style/TextStyle</item>
+    </style>
+
+    <style name="TextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <!-- The textColor property is backward compatible with the Support Library -->
+        <item name="android:textColor">@color/actionBarText</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="BackgroundImage">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="WeatherDetailsTextViewPortrait">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="WeatherDetailsTextViewPortrait.WeatherDetailsTextViewLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="HorizontalDelimiterView">
+        <item name="android:layout_width">70dip</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/separator_grey</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="VerticalDelimiterView">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">140dip</item>
+        <item name="android:background">@color/separator_grey</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <color name="actionBarText">#ffffff</color>
+</resources>

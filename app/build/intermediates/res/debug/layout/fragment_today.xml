@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/BackgroundImage"
+        android:contentDescription="@string/background_image_desc"
+        android:src="@drawable/bg_img_nature" />
+
+    <RelativeLayout
+        android:id="@+id/weatherImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/linear_layout_vertical_margin">
+
+        <ImageView
+            android:id="@+id/overlayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/current_weather_image_desc"/>
+
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/overlayImage"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/current_weather_image_desc" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherImageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/text_view_horizontal_margin"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationText"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/horizontalDelimiter"
+        style="@style/HorizontalDelimiterView"
+        android:layout_below="@id/temperatureText"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalDelimiter"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/humidityText"
+            style="@style/WeatherDetailsTextViewPortrait"/>
+
+        <TextView
+            android:id="@+id/precipitationText"
+            style="@style/WeatherDetailsTextViewPortrait"/>
+
+        <TextView
+            android:id="@+id/pressureText"
+            style="@style/WeatherDetailsTextViewPortrait"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/linear_layout_vertical_margin"
+        android:paddingRight="@dimen/linear_layout_vertical_margin">
+
+        <TextView
+            android:id="@+id/speedText"
+            style="@style/WeatherDetailsTextViewPortrait"/>
+
+        <TextView
+            android:id="@+id/directionText"
+            style="@style/WeatherDetailsTextViewPortrait"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/ANDRA/AndroidStudioProjects/Weather/app/src/main/res/layout/fragment_today.xml -->
