@@ -66,6 +66,7 @@ public class WeatherApplication extends Application {
         mTodayFragment = new TodayFragment();
         mSettingsFragment = new SettingsFragment();
 
+        // Keep track of the current and previous fragments
         mCurrentFragment = Utils.FRAGMENT_TODAY;
         mPreviousFragment = Utils.FRAGMENT_TODAY;
     }
