@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.widget.Toast;
 
 import com.andra.weather.android.R;
 import com.andra.weather.android.utility.Utils;
@@ -28,10 +27,6 @@ public class ActionShareDialogFragment extends DialogFragment {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int position) {
-
-                                Toast.makeText(ActionShareDialogFragment.this.getActivity(),
-                                        mSharedString,
-                                        Toast.LENGTH_LONG).show();
                                 switch (position) {
                                     case 0:
                                         // Share with any app that allows it
