@@ -21,9 +21,6 @@ package com.andra.weather.android.utility;
  */
 public final class Utils {
 
-    // Weather API key for the application
-    public static final String API_KEY = "7b38eb333252a70636f3edd76fde9ca5b63da87b";
-
     // Separator for latlon
     public static final String SEPARATOR = ",";
 
@@ -47,7 +44,7 @@ public final class Utils {
     public static final String ARG_SHARED_TEMP = "shared";
 
     // The identifiers of the three fragments of the application
-    public static final int FRAGMENT_TODAY    = 0;
+    public static final int FRAGMENT_TODAY = 0;
     public static final int FRAGMENT_FORECAST = 1;
     public static final int FRAGMENT_SETTINGS = 2;
 
