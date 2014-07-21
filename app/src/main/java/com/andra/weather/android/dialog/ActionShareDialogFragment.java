@@ -28,10 +28,6 @@ public class ActionShareDialogFragment extends DialogFragment {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int position) {
-
-                                Toast.makeText(ActionShareDialogFragment.this.getActivity(),
-                                        mSharedString,
-                                        Toast.LENGTH_LONG).show();
                                 switch (position) {
                                     case 0:
                                         // Share with any app that allows it
